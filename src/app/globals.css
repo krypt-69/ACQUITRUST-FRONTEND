@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+html {
+  font-size: 18px;          /* smaller than before */
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Force all grey utility classes to black */
+.text-gray-300,
+.text-gray-400,
+.text-gray-500,
+.text-gray-600,
+.text-gray-700 {
+  color: #111111 !important;
+}
+
+/* Slightly lighter for the lightest greys if needed, but still dark */
+.text-gray-200,
+.text-gray-100 {
+  color: #333333 !important;
+}
